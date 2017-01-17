@@ -1,0 +1,127 @@
+.connect-page-top {
+  width: 100%;
+  height: 90%;
+  background: white;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.3s cubic-bezier(0.38, 0, 0.2, 0.99);
+  z-index: 30;
+  overflow: hidden!important;
+  .scrollable {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    margin: 0;
+    transform: translate3d(0, 0, 0);
+
+    .inner {
+      height: calc(100% + 1px);
+    }
+  }
+  .lead-info {
+    .inline-text {
+      margin-right: 10px;
+    }
+  }
+  .option-input {
+    display: inline-block;
+    & > div {
+      display: inline-block;
+      color: black;
+      border: 1px solid white;
+      padding: 0 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        // font-weight: bold;
+      }
+      &.activated {
+        cursor: default;
+        font-weight: bold;
+      }
+    }
+  }
+  .bold {
+    font-weight: 400;
+  }
+  .enabled {
+    .center-dot {
+      background: rgba(0, 0, 0, 0.9);
+      color: white;
+    }
+  }
+  .center-dot {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    color: black;
+    transition: all 0.6s ease;
+
+    .text {
+      margin-top: 40px;
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+  .flag {
+    width: 6px;
+    height: 6px;
+    background: #eee8eb;
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    border: 2px solid #fc6c21;
+  }
+  .text {
+    position: relative;
+    font-size: 1rem;
+    margin: 10px 25px;
+  }
+  .inline-text {
+    display: inline-block;
+    position: relative;
+    font-size: 1rem;
+    margin: 10px 25px;
+  }
+  .text-header {
+    position: relative;
+    font-size: 1rem;
+    margin: 10px 25px;
+    font-weight: 400;
+  }
+  .horizontal-line {
+    margin: 30px 25px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+  }
+  .left-margin {
+    margin-left: 20px;
+  }
+  .delimiter {
+    margin: 50px 0;
+  }
+  .edit-button {
+    position: absolute;
+    right: 0;
+    width: 5.7vw;
+    height: 5.7vw;
+    border: 1px solid gray;
+    border-radius: 2.85vw;
+    text-align: center;
+    cursor: pointer;
+    line-height: 5.7vw;
+    z-index: 10;
+    display: inline-block;
+    transition: all 0.5s ease;
+    &:hover {
+      border: 1px solid black;
+    }
+  }
+}

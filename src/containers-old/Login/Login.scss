@@ -1,0 +1,29 @@
+.check-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: white;
+  z-index: 30;
+
+  .logo {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+  }
+
+  input {
+    height: 50px;
+    width: 300px;
+    // margin-bottom: 200px;
+    font-size: 40px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+  }
+}

@@ -1,0 +1,25 @@
+.help-widget-base {
+  position: absolute;
+  width: 75%;
+  right: 0;
+  height: 100%;
+  .text-medium {
+    font-size: 1rem;
+    line-height: 35px;
+  }
+  .text-link {
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+}
+div.news .section {
+
+  margin-top: 20px;
+
+  .text-link {
+    font-size: 1rem;
+    line-height: 30px;
+    height: auto;
+    margin: 20px 30px 20px 0;
+  }
+}

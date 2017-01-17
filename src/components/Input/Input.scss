@@ -1,0 +1,146 @@
+@import "../../theme/variables";
+.formGroup {
+    position: relative;
+    width: 30vw;
+    input,
+    .disabledText {
+        height: 5vw;
+        display: block;
+        background: none;
+        padding: 0.125rem 0.125rem 0.2625rem;
+        font-size: 2.7vw;
+        border-width: 0;
+        border-color: transparent;
+        line-height: 1.9;
+        width: $full;
+        color: white;
+        box-shadow: none;
+        width: $full;
+        font-weight: 400;
+        transition: all 0.28s ease;
+    }
+    .disabledText {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        font-size: 2.32vw!important;
+        transition: all 0.28s ease;
+        transition-delay: 0s;
+    }
+    input,
+    .inputBool {
+        &:focus {
+            color: white;
+        }
+        &:focus~ .bar::before {
+            width: $full;
+            left: 0;
+        }
+        &:focus~ .controlLabel {
+            font-size: $normal-text-size;
+            font-weight: 300;
+            color: gray;
+            top: -2vw;
+            left: 0;
+            color: white;
+        }
+        &:focus {
+            outline: none;
+        }
+        &:valid~ .controlLabel {
+            font-size: $normal-text-size;
+            font-weight: 300;
+            color: white;
+            top: -2vw;
+            left: 0;
+        }
+        &::after,
+        &::before {
+            box-sizing: border-box;
+        }
+    }
+    .inputBool,
+    .inputMonths {
+        transition: all 0.28s ease;
+        height: 5vw;
+        padding: 0.125rem 0.125rem 0.2625rem;
+        width: $full;
+        &:focus> div {
+            opacity: 1;
+        }
+        &> div {
+            transition: opacity 0.4s ease-out;
+            opacity: 0;
+            line-height: 4.5vw;
+            font-weight: 400;
+            font-size: 2.7vw;
+            display: inline;
+            cursor: pointer;
+        }
+        &> div:nth-child(2) {
+            float: right;
+        }
+    }
+    .inputMonths {
+        &> div {
+            transition: opacity 0.4s ease-out;
+            opacity: 0;
+            line-height: 4.5vw;
+            font-weight: 400;
+            font-size: 2.5vw;
+            display: inline;
+            cursor: pointer;
+            margin-right: 2.4vw;
+        }
+        &> div:nth-child(2) {
+            float: none;
+        }
+    }
+    .bar {
+        position: relative;
+        border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.4);
+        display: block;
+        &::before {
+            content: '';
+            height: 0.125rem;
+            width: 0;
+            left: $half;
+            bottom: -0.0625rem;
+            position: absolute;
+            background: rgba(255, 255, 255, 1);
+            -webkit-transition: left 0.28s ease, width 0.28s ease;
+            transition: left 0.28s ease, width 0.28s ease;
+            z-index: 2;
+        }
+    }
+    .controlLabel {
+        position: absolute;
+        top: 2.2vw;
+        pointer-events: none;
+        padding-left: 0.125rem;
+        z-index: 1;
+        color: white;
+        font-size: 2.7vw;
+        font-weight: 400;
+        -webkit-transition: all 0.28s ease;
+        transition: all 0.28s ease;
+    }
+    &.disabled {
+        .bar,
+        .controlLabel,
+        .inputBool,
+        input {
+            opacity: 0;
+            user-select: none;
+        }
+        .disabledText {
+            visibility: visible;
+            opacity: 1;
+            z-index: 2;
+        }
+    }
+}
+
+.clickable {
+  cursor: pointer;
+}

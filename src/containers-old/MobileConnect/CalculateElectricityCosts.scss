@@ -1,0 +1,126 @@
+.month-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .month-rows {
+
+  }
+}
+
+.button-circle {
+  opacity: 0.7;
+  fill: url("#button-gradient");
+}
+.button-text {
+  font-size: 43.585px;
+  font-family: HelveticaNeue-Light, Helvetica Neue;
+}
+
+
+.month-cost {
+    width: 55px;
+    text-align: right;
+}
+
+.month-cost-input {
+    width: 70px;
+    text-align: left;
+}
+
+.electricity {
+  .input-field {
+    height: 25px;
+    background: #f4f4f4!important;
+    color: black;
+    border: 0;
+    padding: 5px 5px 5px 15px!important;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+}
+
+.gradient-button {
+    background: linear-gradient(#dcdcdc, #c3c3c3);
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+    border-radius: 70px;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 40px;
+    margin: 0 auto;
+}
+
+.month-cost-wrapper {
+    height: 50px;
+}
+
+.year-plot-wrapper {
+  position: relative;
+  margin-top: 50px;
+}
+
+.slide-wrapper {
+
+}
+
+.box {
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    // margin: 10px;
+    float: left;
+    position: relative;
+    cursor: move;
+}
+
+.box-wrapper {
+  position: relative;
+  top:50px;
+  margin: 0 auto;
+  width: 80px;
+  height: 200px;
+  border: 1px solid #e6e5e6;
+  border-radius: 40px;
+  background-color: white;
+}
+
+.react-draggable, .cursor {
+    cursor: move;
+}
+
+.winter-left {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  bottom: 80px;
+  left: 20px;
+}
+
+.winter-right {
+  position: absolute;
+  font-size: 20px;
+  bottom: 80px;
+  right: 20px;
+}
+
+.summer-center {
+  position: absolute;
+  font-size: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 20px;
+}
+
+.multiplier {
+  position: absolute;
+  top: 10px;
+  font-size: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.invisible {
+  visibility: hidden;
+}

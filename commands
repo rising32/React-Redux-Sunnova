@@ -1,0 +1,3 @@
+heroku pg:psql -c "..."
+
+UPDATE mobile.users SET password = 'a248bd97c90e5ff7eef8337f0138181196673e3245347df4263359687e94b502fe94e5b5f059202cbb9fff41f80f738036c770e8b97bbe87e231c1c9b460576d', salt = 'd2e6ba9abaa47a651036d7ed8941cec3' WHERE id = ID

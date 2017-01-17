@@ -1,0 +1,83 @@
+.visible-controls {
+  z-index: 110;
+}
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  cursor: pointer;
+}
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  cursor: pointer;
+}
+.savings-back {
+  background-color: rgba(60, 59, 59, 0.5);
+}
+.with-without {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  font-size: 20px;
+  color: white;
+  span {
+    padding: 6px 11px;
+    // border: 1px solid #c4c1c4;
+  }
+  .active {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #c4c1c4;
+  }
+}
+.calculate-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid white;
+  color: white;
+  font-size: 23px;
+  padding: 10px 17px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: -50px;
+}
+.action-button {
+  // -webkit-backdrop-filter: blur(10px);
+  // backdrop-filter: blur(4px);
+  position: relative;
+  border-radius: 20px;
+  /* border: 1px solid gray; */
+  // background: rgba(0, 0, 0, 0.1);
+  color: white;
+  font-size: 1.8rem;
+  padding: 20px 40px;
+  cursor: pointer;
+
+  &.button-background {
+    margin: 8px 3px;
+    width: 450px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  &.success {
+    margin: 5px 0;
+    border: 3px solid #24c643;
+  }
+}
+
+.headline-savings {
+  color: white;
+  font-size: 2.8rem;
+  position: relative;
+  // top: -50px;
+}
+
+.headline iframe {
+  z-index: 1500;
+  position: relative;
+}

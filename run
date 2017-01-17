@@ -1,0 +1,5 @@
+#!/bin/sh +e
+
+export DATABASE_URL=postgres://uanunct5nbsu26:p43jtsqnf88fhgfug5qrorr1tgp@ec2-52-86-89-207.compute-1.amazonaws.com:5432/d9qdapk5ega1
+export NODE_ENV=development
+npm run dev

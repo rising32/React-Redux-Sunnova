@@ -1,0 +1,90 @@
+.glass-widget-text {
+    font-size: 1.1rem;
+}
+
+.glass-widget-cancel {
+    top: 40px;
+    right: 40px;
+}
+
+.submit-widget-bottom {
+    position: absolute;
+    width: 75%;
+    right: 0;
+}
+.submit-widget-bottom {
+    bottom: 50px;
+}
+
+.user-login-box .left-margin {
+  margin-left:30px
+}
+
+.submit-widget-buttons {
+  background: #f5f4f6;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 60px;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 40px;
+  border: 2px solid #9b999b;
+
+  div {
+    margin-top: 28px;
+    line-height: 30px;
+  }
+}
+
+.submit-claim-widget {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+}
+
+.glass.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: auto;
+    z-index:-2;
+}
+
+.glass.layer.blured {
+  z-index:50;
+  -webkit-filter: blur(0px);
+  filter:blur(0px);
+}
+
+.option-input {
+  display: inline-block;
+  & > div {
+    display: inline-block;
+    color: black;
+    border: 1px solid white;
+    padding: 0 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid gray;
+    }
+    &.activated {
+      border: 1px solid black;
+      cursor: default;
+    }
+  }
+}
+
+.inline-text {
+  display: inline-block;
+}
+
+.red-border {
+  border: 2px solid red!important;
+}

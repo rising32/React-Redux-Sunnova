@@ -1,0 +1,87 @@
+.glass-widget-base {
+  position: absolute;
+  width: 100%;
+  top:50%;
+  transform: translate(0, -50%);
+
+  .text-link {
+    font-size: 1rem;
+    text-align: center;
+    margin: 5px;
+    color: white;
+
+    &.first {
+      margin: 50px;
+    }
+    &.last {
+      margin-bottom: 50px;
+    }
+  }
+
+  .submit-widget-buttons {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 60px;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 40px;
+    border: 2px solid #9b999b;
+    background: transparent;
+    color: white;
+
+    div {
+      margin-top: 28px;
+      line-height: 30px;
+    }
+  }
+}
+
+.bold-text {
+  font-weight: 400;
+}
+
+.glass-widget-text {
+    font-size: 1.1rem;
+}
+
+.glass-widget-cancel {
+    top: 40px;
+    right: 40px;
+}
+
+.submit-widget-bottom {
+    position: absolute;
+    width: 75%;
+    right: 0;
+}
+.submit-widget-bottom {
+    bottom: 50px;
+}
+
+
+
+.submit-claim-widget {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+}
+
+.glass.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: auto;
+    z-index:-2;
+}
+
+.glass.layer.blured {
+  z-index:50;
+  -webkit-filter: blur(0px);
+  filter:blur(0px);
+}

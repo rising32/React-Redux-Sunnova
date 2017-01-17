@@ -1,0 +1,171 @@
+.input-row {
+  padding: 3px 0;
+  height: 50px;
+}
+.full-width {
+  width: 100% !important;
+}
+.state-input {
+  width: 55px !important;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.zip-field {
+  width: 60px !important;
+}
+
+.add-another-contact {
+    // margin-left: 100px;
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+}
+
+.new-lead-page {
+  position: relative;
+}
+
+.validate-button {
+    // margin-left: 20px!important;
+}
+
+.flex-start {
+    justify-content: flex-start!important;
+}
+
+.right-margin-30 {
+  margin-right: 30px;
+}
+
+.top-margin-50 {
+    margin-top: 50px;
+}
+
+.section-head .section-title {
+    font-weight: 400;
+}
+
+.option-input {
+  margin-top: 8px;
+}
+
+.section-title {
+    font-size: 1.1rem;
+}
+
+.text-link {
+  cursor: pointer;
+}
+
+.text-link.activated {
+    color: black;
+    border: 1px solid black!important;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+.new-lead-page .section {
+    padding-top: 80px;
+}
+
+.main-button {
+    // background: #f5f4f6;
+    background: white;
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+    border-radius: 70px;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.other-button {
+    // background: #f5f4f6;
+    background: white;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 40px;
+    // margin-top:
+
+    div {
+      margin-top: 26px;
+      line-height: 22px;
+    }
+}
+
+.new-lead-page .section:first-child {
+    padding-top: 0;
+}
+
+.phone-number-field {
+    width: 200px;
+    margin-right: 20px;
+}
+
+input.green-border {
+  border: 2px solid #8bea9d!important;
+}
+
+.green-border {
+  border: 2px solid #8bea9d!important;
+}
+
+.input-field.red-border {
+  border: 2px solid red;
+}
+
+.main-button.red-border {
+  border: 2px solid red;
+}
+
+.red-border {
+  border: 2px solid red;
+}
+
+.validated {
+  color: #8bea9d!important;
+}
+
+.black-border {
+  border: 2px solid #9b999b;
+}
+
+.input-field {
+  height: 25px;
+  background: #F5F4F6;
+  color: black;
+  border: 0;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-buttons {
+  padding-bottom: 350px;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+::-webkit-input-placeholder {
+    text-transform: none;
+    color: gray;
+    font-weight: 300;
+}
+
+.test-data .option-input > div{
+  color: black;
+  border: 1px solid white;
+  padding: 0 15px;
+  border-radius: 5px;
+}

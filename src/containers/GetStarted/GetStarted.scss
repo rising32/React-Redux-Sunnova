@@ -1,0 +1,230 @@
+@import "../../theme/variables";
+.centerBox {
+    position: absolute;
+    left: 12%;
+    top: 5%;
+    width: 76%;
+    height: 95%;
+    opacity: 1;
+    .leftSide {
+        float: left;
+        width: 46%;
+        // background: yellow;
+    }
+    .rightSide,
+    .rightSideEV,
+    .rightSideElectricity,
+    .rightSideMonth,
+    .rightSide10Year {
+        position: absolute;
+        right: 0;
+        width: 44%;
+        float: right;
+        transition: opacity 0.7s ease-out;
+        // background: blue;
+    }
+    .mic {
+        width: 1.8vw;
+        top: 1.3vw;
+        left: 23vw;
+        position: absolute;
+        transition: opacity 0.7s ease-out;
+    }
+    .rightSideEV,
+    .rightSideElectricity,
+    .rightSideMonth,
+    .rightSide10Year {
+        opacity: 0;
+        transition-delay: 0.7s;
+    }
+    &.hide {
+        .mic {
+            opacity: 0;
+        }
+        .rightSide {
+            opacity: 0;
+        }
+        .rightSideEV {
+            opacity: 1;
+        }
+        .leftSide {
+            .zipcode {
+                top: -0.3vw;
+            }
+            .vehicle {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    &.hideEV {
+        .rightSideEV {
+            opacity: 0;
+        }
+        .rightSideElectricity {
+            opacity: 1;
+        }
+        .leftSide {
+            .zipcode {
+                top: -0.3vw;
+            }
+            .vehicle {
+                position: absolute;
+                top: 2.1vw;
+            }
+            .electricity {
+                opacity: 1;
+                z-index: 10;
+                visibility: visible;
+            }
+        }
+    }
+    &.hideEL {
+        .rightSideEV {
+            opacity: 0;
+        }
+        .rightSideElectricity {
+            opacity: 0;
+        }
+        .rightSideMonth {
+            opacity: 1
+        }
+        .leftSide {
+            .zipcode {
+                top: -0.3vw;
+            }
+            .vehicle {
+                position: absolute;
+                top: 2.1vw;
+            }
+            .electricity {
+                position: absolute;
+                top: 2.4vw;
+            }
+            .month {
+                z-index: 9;
+                margin-top: 9vw;
+                opacity: 1;
+                visibility: visible;
+            }
+            .graph {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    &.monthSelected {
+        .rightSide10Year {
+            opacity: 1;
+        }
+        .rightSideMonth {
+            opacity: 0;
+        }
+        .leftSide {
+            .electricity {
+                opacity: 0!important;
+            }
+            .month {
+                position: absolute;
+                top: 5.1vw;
+                margin-top: 0;
+                z-index: 11;
+            }
+        }
+    }
+}
+
+.rightSide, .leftSide {
+  height:  $full;
+}
+
+.zipcode,
+.vehicle,
+.electricity,
+.month,
+{
+    position: relative;
+    top: 5vw;
+    width:  $full;
+    transition: all 0.7s ease-out;
+}
+
+.graph {
+    position: relative;
+    top: 16vw;
+    transition: all 0.7s ease-out;
+    svg {
+        transition: width 0.7s ease-out, transform 0.7s ease-out;
+        width: 76vw;
+        transform: translate(0, 0)!important;
+    }
+    svg.line {
+        width: 5vw;
+    }
+}
+
+.vehicle {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.electricity {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.month {
+    visibility: hidden;
+    opacity: 0;
+    &>div {
+        width: 35vw;
+    }
+}
+
+.expensesTotal {
+    position: absolute;
+    top: 9.1vw;
+}
+
+.savingsTotal {
+    position: absolute;
+    top: 18vw;
+    &>div {
+        color: #33ff00;
+        font-weight: 400;
+        &:hover {
+            color: #29cc00!important;
+        }
+    }
+}
+
+
+.userInfo {
+  border-top: 1px solid black;
+  width:  $full;
+  bottom: 15%;
+  position: absolute;
+
+  & > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    & > li {
+      display: inline-block;
+      margin-right: 2vw;
+    }
+    & > li:nth-child(3) {
+      margin-left: 8vw;
+      margin-right: 0;
+    }
+  }
+}
+
+.profilePicture {
+    border-radius: $half;
+    width: 5vw;
+    border: 1px solid #206ec2;
+    position: relative;
+    top: 2vw;
+}

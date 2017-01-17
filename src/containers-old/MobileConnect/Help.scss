@@ -1,0 +1,47 @@
+.glass-widget-base {
+  position: absolute;
+  width: 75%;
+  right: 0;
+
+  .text-link {
+    font-size: 1rem;
+    text-align: center;
+    margin: 5px;
+    color: white;
+
+    &.first {
+      margin: 50px;
+    }
+    &.last {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.help-widget-base {
+  position: absolute;
+  width: 75%;
+  right: 0;
+  height: 100%;
+
+  .text-medium {
+    font-size: 1rem;
+    line-height: 1.5rem!important;
+  }
+
+  .text-link {
+    margin-bottom:10px;
+    display: block!important;
+    // display: inline-block;
+  }
+
+  iframe {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+.scrollable {
+  -webkit-overflow-scrolling: touch;
+}

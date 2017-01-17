@@ -1,0 +1,33 @@
+@import "../../theme/variables";
+.textNormal {
+  color: black;
+  font-size: $normal-text-size;
+  font-weight: 400;
+  line-height: 3vw;
+  transition: color 0.3s ease-out;
+
+  &.bold {
+    font-weight: 600;
+  }
+
+  &.inline {
+    display: inline
+  }
+  &.italic {
+    font-style: italic;
+  }
+
+  &.clickable {
+    color: $normal-text-color;
+    &:hover {
+      cursor: pointer;
+      color: $normal-text-hover-color;
+    }
+  }
+  &.big {
+    font-size: 2.6vw;
+    line-height: 5vw;
+  }
+}
+
+

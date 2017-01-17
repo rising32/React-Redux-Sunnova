@@ -1,0 +1,38 @@
+.sure-button {
+  display: none;
+  margin-left: 50px;
+}
+
+div.active > .sure-button {
+  display: inline-block;
+}
+
+.buttons {
+  font-size: 1rem;
+    display: inline-block;
+    /* background: #fc6c21; */
+    font-weight: bold;
+    padding: 0px 8px;
+    /* color: white; */
+    border-radius: 5px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin: 0 5px;
+    color: black;
+    font-weight: 300;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.user-row {
+  height: 40px;
+
+  span.disabled {
+    color: grey;
+  }
+
+  &.active {
+    font-weight: bold;
+  }
+}

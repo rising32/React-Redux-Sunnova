@@ -1,0 +1,386 @@
+@import "../../theme/variables";
+
+.landingPage,
+.installerPage {
+    width: $full;
+    height: $full;
+}
+
+.login-info {
+    list-style: none;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    border: 1px solid white;
+    li {
+        color: white;
+        font-size: 1.5rem;
+        vertical-align: middle;
+        display: inline-block;
+        margin: 0 20px;
+        &:first-child {
+            margin-left: 0;
+            padding-left: 0;
+            height: 65px;
+        }
+        &.profile-picture img {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        &.menu {
+            cursor: pointer;
+        }
+    }
+}
+
+.logged-info {
+    list-style: none;
+    background: white;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    height: 85px;
+    z-index: 100;
+    position: relative;
+    li {
+        color: white;
+        font-size: 1.5rem;
+        vertical-align: middle;
+        display: inline-block;
+        margin: 0 10px;
+        &:first-child {
+            margin-left: 0;
+            padding-left: 0;
+            height: 85px;
+        }
+        &.profile-picture img {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            height: 85px;
+        }
+    }
+}
+
+.landingFlex {
+    display: flex;
+    width: $full;
+    height: $full;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    .headline {
+        width: $full;
+        // flex-grow: 3;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: flex-start;
+        #headline-text {
+            color: white;
+            font-weight: 700;
+        }
+    }
+    .landing-buttons {
+        list-style: none;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+        top: 50px;
+        position: relative;
+        &.right {
+            float: right;
+            width: 100%;
+            position: absolute;
+            top: $half;
+            transform: translate(0, -50%);
+            li {
+                float: right;
+                margin-right: 5%;
+            }
+        }
+        li {
+            display: inline-block;
+            color: white;
+            font-size: 1.5rem;
+            width: auto;
+            padding: 15px 30px;
+            border-radius: 8px;
+            margin: 20px;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid;
+            &.right-float {
+                background: none;
+                position: absolute;
+                right: 20px;
+                width: 300px;
+                height: 65px;
+                border: 0px!important;
+                font-size: 18px!important;
+            }
+            img {
+                position: relative;
+                top: -3px;
+                left: 5px;
+                vertical-align: middle;
+            }
+        }
+    }
+    .logo {
+        padding: 0;
+        flex-grow: 1;
+        position: absolute;
+        bottom: 5%;
+        right: 12%;
+    }
+}
+
+.user-login-box {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1rem;
+    z-index: 1000;
+    .login-input {
+        border: 0;
+        background: $shadow-color;
+        display: block;
+        width: $full;
+        height: 53px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        font-size: 1rem;
+        padding: 0 10px;
+        box-sizing: border-box;
+        font-weight: 300;
+    }
+    ul.social-buttons {
+        margin-bottom: 40px;
+        li {
+            height: 50px;
+            line-height: 50px;
+            padding: 0 10px;
+            cursor: pointer;
+            img {
+                margin-right: 20px;
+                margin-left: 10px;
+                // margin-top: 5px;
+                position: relative;
+                top: 5px;
+            }
+        }
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            display: inline-block;
+            margin: 0 2px;
+            &.fb-button {
+                background: #527dbe;
+                border-radius: 10px;
+                color: white;
+                width: 220px;
+            }
+            &.twitter-button {
+                background: #69ccef;
+                border-radius: 10px;
+                color: white;
+                width: 220px;
+            }
+        }
+    }
+}
+
+ul.login-buttons {
+    height: 53px;
+    line-height: 53px;
+    li {
+        &:first-child {
+            margin-right: 40px;
+        }
+        &.submit-button {
+            float: right;
+            background: $shadow-color;
+            border-radius: 10px;
+            padding: 0 15px;
+        }
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px $shadow-color inset;
+}
+
+.buttons-lead-selected {
+    position: absolute;
+    top: $half;
+    transform: transition(-50%, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: $full;
+    img {
+        cursor: pointer;
+    }
+    h2 {
+        cursor: pointer;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 300;
+        &.left {
+            margin-left: 5%;
+        }
+        &.right {
+            margin-right: 5%;
+            position: relative;
+            padding-right: 40px;
+            img {
+                position: absolute;
+                top: -5px;
+                right: 0;
+            }
+        }
+    }
+}
+
+.headline {
+    width: 76%!important;
+    position: absolute;
+    bottom: 17%;
+    left: $half;
+    transform: translate(-50%, 0);
+    .headlineText {
+        font-size: 8.4vw;
+        font-weight: 900;
+        color: white;
+        margin-bottom: 0;
+    }
+    h2 {
+        font-size: 2.05vw;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+    }
+}
+
+.clickable:hover {
+    cursor: pointer;
+    text-shadow: 1px 1px 2px black;
+}
+
+.backgroundVideo {
+    object-fit: cover;
+    min-width: $full;
+    min-height: $full;
+    width: $full;
+    height: $full;
+    z-index: -1000;
+    overflow: hidden;
+
+    &.hidden {
+      display: none;
+    }
+}
+
+.installerPage {
+    background: url(/images/installer.jpg);
+    width: $full;
+    height: $full;
+    background-size: cover;
+}
+
+.designerPage {
+    background: url(/images/designer.jpg);
+    width: $full;
+    height: $full;
+    background-size: cover;
+}
+
+.batteryPage {
+    background: url(/images/battery.jpg);
+    width: $full;
+    height: $full;
+    background-size: cover;
+}
+
+.savingsPage {
+    background: url(/images/savings.jpg);
+    width: $full;
+    height: $full;
+    background-size: cover;
+}
+
+.shadingPage {
+    background: url(/images/shading.jpg);
+    width: $full;
+    height: $full;
+    background-size: cover;
+}
+
+.landingPage {
+    background: url(../../../static/images/LandingBackground.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 108%;
+    height: 108%;
+
+    position: absolute;
+    left: -4%;
+    top: -4%;
+}
+
+.text {
+    color: white;
+}
+
+.textPosition {
+    text-align: right;
+    position: absolute;
+    right: 12%;
+    top: 18%;
+}
+
+.designerTextPosition {
+    text-align: left;
+    position: absolute;
+    left: 12%;
+    top: 5%;
+}
+
+.installerBox {
+    background: #29abe2;
+    position: absolute;
+    bottom: 20%;
+    border-radius: 0.5vw;
+    left: $half;
+    transform: translate(-50%, 0);
+}
+
+.reviewsText {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    padding: 0.3vw 1vw;
+}
+
+.reviewRating {
+    width: 13vw;
+    position: absolute;
+    top: 6%;
+    right: 0;
+    padding: 0.3vw 1vw;
+}
+
+.playButton {
+    width: 3.5vw;
+    position: absolute;
+    right: 0;
+    top: 2vw;
+}

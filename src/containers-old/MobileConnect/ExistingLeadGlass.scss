@@ -1,0 +1,53 @@
+.submit-widget-buttons {
+  &.disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+
+  .text {
+
+  }
+}
+
+.submit-widget-bottom {
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-top: -100px;
+
+  img.helper {
+    position: absolute;
+    right: 104px;
+    bottom: -320px;
+  }
+
+  .flag {
+    width: 6px;
+    height: 6px;
+    background: #eee8eb;
+    display: block;
+    border-radius: 5px;
+    position: relative;
+    top: 6px;
+    left: 55px;
+    border: 2px solid #fc6c21;
+  }
+
+  ul {
+    list-style: none;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    margin: 40px;
+
+    li {
+      margin: 10px;
+    }
+
+    &.lead-type {
+      li {
+        font-weight: 400;
+      }
+    }
+
+  }
+}

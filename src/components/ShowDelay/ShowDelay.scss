@@ -1,0 +1,11 @@
+.showDelay {
+  transition: opacity 0.7s ease-out;
+  &.delayed {
+    opacity: 0;
+    visibility: hidden;
+  }
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}

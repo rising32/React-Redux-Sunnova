@@ -1,0 +1,57 @@
+.designerDialog {
+  position: absolute;
+  z-index: 999;
+  background: rgba(255,255,255, 0.9);
+  text-align: center;
+}
+p {
+  margin: 0;
+}
+.codeToType {
+  color: #8C8A8B;
+  p {
+    font-weight: 600;
+  }
+}
+.btnNormal {
+  background: rgba(0,0,0,0);
+  border-style: none;
+  color: #5A8BCC;
+}
+
+.designerDialog {
+  border-radius: 5vh;
+  width: 90vw;
+  height: calc(100vh - 10vw);
+  left: 5vw;
+  top: 5vw;
+}
+.msgToUser {
+  padding: 0 5vw;
+  margin-top: 10vh;
+  p {
+    font-size: 3.5vw;
+  }
+}
+.codeToType {
+  color: #8C8A8B;
+  margin-top: 10vh;
+  p {
+    font-size: 8vw;
+    font-weight: 600;
+  }
+}
+.action {
+  margin-top: 15vh;
+}
+.btnNormal {
+  background: rgba(0,0,0,0);
+  border-style: none;
+  font-size: 3.5vw;
+  color: #5A8BCC;
+}
+.btnDone {
+  margin-right: 10vh;
+}
+.btnCancel {
+}

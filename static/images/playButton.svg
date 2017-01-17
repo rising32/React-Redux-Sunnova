@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.868 90.861">
+  <defs>
+    <style>
+      .a {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>CirclePlayButton</title>
+  <path class="a" d="M48.683,1.109a45.43,45.43,0,1,0,45.43,45.43A45.433,45.433,0,0,0,48.683,1.109ZM37.572,68.823V24.255L67.286,46.539Z" transform="translate(-3.245 -1.109)"/>
+</svg>

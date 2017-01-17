@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2048 1536">
+  <defs>
+    <style>
+      .a {
+        isolation: isolate;
+      }
+
+      .b {
+        mix-blend-mode: multiply;
+        fill: url(#a);
+      }
+    </style>
+    <radialGradient id="a" cx="953.328" cy="732.353" r="1346.636" gradientTransform="translate(60.886 27.469) scale(1.01 1.011)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#633f21" stop-opacity="0"/>
+      <stop offset="0.277" stop-color="#633f21" stop-opacity="0.193"/>
+      <stop offset="0.837" stop-color="#633f21" stop-opacity="0.692"/>
+      <stop offset="1" stop-color="#633f21" stop-opacity="0.85"/>
+    </radialGradient>
+  </defs>
+  <title>defaultBrownCircularGradient</title>
+  <g class="a">
+    <rect class="b" width="2048" height="1536"/>
+  </g>
+</svg>

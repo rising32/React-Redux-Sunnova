@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94.085 94.085">
+  <defs>
+    <style>
+      .a {
+        fill: #fff;
+      }
+
+      .b {
+        fill: red;
+      }
+    </style>
+  </defs>
+  <title>circleX</title>
+  <circle class="a" cx="50" cy="50" r="47.04" transform="translate(-23.05 56.372) rotate(-52.582)"/>
+  <path class="b" d="M40.367,35.456l9.842,9.9,9.369-9.312,4.39,4.419L54.6,49.773l9.889,9.949-4.854,4.822L49.744,54.6l-9.318,9.264L36.033,59.44l9.322-9.264-9.842-9.9Z" transform="translate(-2.958 -2.958)"/>
+</svg>

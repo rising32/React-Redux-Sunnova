@@ -1,0 +1,9 @@
+.left-arrow, .right-arrow {
+  &.disabled {
+      cursor: default!important;
+
+      img, span {
+        cursor: default!important;
+      }
+  }
+}
